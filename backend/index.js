@@ -8,8 +8,10 @@ connectDB();
 const app=express();
 
 app.use(cors({
-    origin: "http://localhost:5173",
-    devlopment:"https://placement-track-mern-mongodb.onrender.com"
+    origin: [
+        "http://localhost:5173",
+        "https://placement-track-mern-mongodb.onrender.com"
+    ]
   credentials: true,
 }));
 app.use(express.json());

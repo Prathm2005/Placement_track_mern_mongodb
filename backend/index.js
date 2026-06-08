@@ -8,11 +8,8 @@ connectDB();
 const app=express();
 
 app.use(cors({
-    origin: [
-        "http://localhost:5173",
-        "https://placement-track-mern-mongodb.vercel.app"
-    ]
-  credentials: true,
+    origin: "*"
+  credentials: false,
 }));
 app.use(express.json());
 

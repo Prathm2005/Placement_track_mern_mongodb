@@ -10,7 +10,7 @@ const app=express();
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://placement-track-mern-mongodb.onrender.com"
+        "https://placement-track-mern-mongodb.vercel.app"
     ]
   credentials: true,
 }));
